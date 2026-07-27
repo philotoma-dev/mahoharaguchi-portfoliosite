@@ -1,0 +1,296 @@
+.mv {
+    position: relative;
+    width: 90%;
+    max-width: 1120px;
+    height: 560px;
+    margin: 0 auto 50px;
+}
+
+
+.mv img {
+    margin-top: 60px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.mv h1 {
+    position: absolute;
+    top: -80px;
+    left: 20px;
+    z-index: 2;
+    font-family:
+        "Reenie Beanie",
+        cursive;
+    font-size: 98px;
+    font-weight: 400;
+}
+
+
+.profile {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto 80px;
+    padding: 30px 40px;
+    background-color: #dcecf5;
+}
+
+
+.profile h2 {
+    margin-bottom: 20px;
+    font-family:
+        "Reenie Beanie",
+        cursive;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.profile-images {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.profile-images img:first-child {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.profile-images img:last-child {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin-left: -20px;
+    margin-top: -60px;
+}
+
+
+.profile-text {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+
+.profile-box {
+    font-size: 16px;
+}
+
+
+.profile h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.profile-text p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.skills {
+    position: relative;
+    width: 100%;
+    padding: 60px 20px 80px;
+    /* overflow: hidden; */
+    background-image: url("../img/skills.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.skills-content {
+    position: relative;
+    z-index: 1;
+}
+
+.skills h2 {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto 30px;
+
+    font-family: "Reenie Beanie", cursive;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.skills-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+.skilld-container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+
+.works {
+    width: 90%;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 70px 0 100px;
+}
+
+.works h2 {
+    margin-bottom: 40px;
+    font-family:
+        "Reenie Beanie",
+        cursive;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.works-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px 15px;
+}
+
+.work-item {
+    display: block;
+    color: #222;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.work-item:hover {
+    transform: translateY(-5px);
+}
+
+.work-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.work-item h3 {
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.work-item p {
+    margin-top: 5px;
+    font-size: 9px;
+}
+
+
+.works-categorite {
+    position: absolute;
+    margin: 8px;
+    padding: 2px 8px;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 9px;
+    z-index: 2;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+
+
+
+
+
+    .mv {
+        width: 90%;
+        height: 280px;
+    }
+
+
+    .mv h1 {
+        top: -25px;
+        left: 15px;
+        font-size: 45px;
+    }
+
+    .profile {
+        width: 90%;
+        padding: 25px 20px;
+    }
+
+
+
+    .profile h2 {
+        font-size: 42px;
+    }
+
+    .profile-text p {
+        font-size: 12px;
+    }
+
+    .profile-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .profile-images img:first-child {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .profile-images img:last-child {
+        display: none;
+    }
+
+    .skills {
+        padding: 50px 15px;
+    }
+
+    .skilld-container h2 {
+        font-size: 42px;
+    }
+
+    .skilld-container img{
+        max-width: 100px;
+    }
+    .skilld-container p{
+        font-size: 10px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+
+    .works {
+        width: 90%;
+        padding: 50px 0 70px;
+    }
+
+
+    .works h2 {
+        font-size: 42px;
+    }
+    .works h4{
+        font-size: 20px;
+    }
+    .works p{
+        font-size: 10px;
+    }
+    .works-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .work-item img {
+        height: auto;
+    }
+
+
+}
